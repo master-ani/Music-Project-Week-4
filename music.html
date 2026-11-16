@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Website</title>
+    <link rel="stylesheet" href="music.css">
+    <script src="music.js"></script>
+    <script src="https://kit.fontawesome.com/4211e47522.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <section id="landing">
+        <div class="music__background">
+            <figure class="music__background__wrapper">
+                <div class="nav__music__content">
+                    <div class="nav__music__left">
+                        <div class="nav__logo__wrapper">
+                            <i class="fa-solid fa-wave-square nav__logo"></i>
+                        </div>
+                        <a href="#" class="nav__link">Home</a>
+                        <a href="#" class="nav__link">Contact</a>
+                    </div>
+                    <div class="nav__music__right">
+                        <div class="nav__input__wrapper">
+                            <input type="text" class="nav__input" placeholder="Find a Song" onkeyup="searchBarEnter(event)">
+                            <i class="fa-solid fa-magnifying-glass nav__search" onclick="searchActive()"></i>
+                        </div>
+                        <i class="fa-solid fa-gear nav__settings"></i>
+                    </div>
+                </div>
+                <img src="assets/music--background2.jpg" class="music__background__image" alt="">
+                <div class="music__background__text">
+                    <h1 class="music__background__title">Soundwave</h1>
+                    <h3 class="music__background__paragraph">
+                        With over a Million Songs on Soundwave, Time isn't enough!
+                    </h3>
+                    <div class="music__background__search">
+                        <div class="music__background__input__wrapper">
+                            <input type="text" class="music__input" placeholder="Find a Song" onkeyup="searchBarEnter(event)">
+                            <i class="fa-solid fa-magnifying-glass music__search" onclick="searchBarClick()"></i>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+        </div>
+    </section>
+    <section id="musics">
+        <div class="container">
+            <div class="row">
+                <div class="music__content">
+                    <div class="music__top">
+                        <h3 class="music__search__text">Search Results for:</h3>
+                        <h3 class="music__search__result">""</h3>
+                    </div>
+                    <div class="music__list">
+                        <i class="fa-solid fa-spinner music__list__loading"></i>
+                        <div class="music">
+                            <figure class="music__image__wrapper">
+                                <img src="assets/absolution.jpeg" alt="" class="music__image">
+                                <div class="music__hover__list">
+                                    <div class="music__hover1">
+                                        <i class="fa-solid fa-clock hover__icon"></i>
+                                        <h4 class="music__hover">3 mins 29 sec</h4>
+                                    </div>
+                                    <div class="music__hover2">
+                                        <i class="fa-solid fa-calendar hover__icon"></i>
+                                        <h4 class="music__hover">2003</h4>
+                                    </div>
+                                    <div class="music__hover3">
+                                        <i class="fa-solid fa-record-vinyl hover__icon"></i>
+                                        <h4 class="music__hover">Rock</h4>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="music__info__list">
+                                <div class="music__info1">
+                                    <i class="fa-brands fa-itunes-note music__icon1"></i>
+                                    <h3 class="music__title">The Small Print</h3>
+                                </div>
+                                <div class="music__info2">
+                                    <i class="fa-solid fa-folder music__icon2"></i>
+                                    <h4 class="music__album">Absolution</h4>
+                                </div>
+                                <div class="music__info3">
+                                    <i class="fa-solid fa-user music__icon3"></i>
+                                    <h4 class="music__artist">Muse</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="music">
+                            <figure class="music__image__wrapper">
+                                <img src="assets/Koi No Yokan Cover.jpg" alt="" class="music__image">
+                                <div class="music__hover__list">
+                                    <div class="music__hover1">
+                                        <i class="fa-solid fa-clock hover__icon"></i>
+                                        <h4 class="music__hover">6 mins 5 sec</h4>
+                                    </div>
+                                    <div class="music__hover2">
+                                        <i class="fa-solid fa-calendar hover__icon"></i>
+                                        <h4 class="music__hover">2012</h4>
+                                    </div>
+                                    <div class="music__hover3">
+                                        <i class="fa-solid fa-record-vinyl hover__icon"></i>
+                                        <h4 class="music__hover">Hard Rock</h4>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="music__info__list">
+                                <div class="music__info1">
+                                    <i class="fa-brands fa-itunes-note music__icon1"></i>
+                                    <h3 class="music__title">Tempest</h3>
+                                </div>
+                                <div class="music__info2">
+                                    <i class="fa-solid fa-folder music__icon2"></i>
+                                    <h4 class="music__album">Koi No Yokan</h4>
+                                </div>
+                                <div class="music__info3">
+                                    <i class="fa-solid fa-user music__icon3"></i>
+                                    <h4 class="music__artist">Deftones</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="music">
+                            <figure class="music__image__wrapper">
+                                <img src="assets/AM cover.jpg.webp" alt="" class="music__image">
+                                <div class="music__hover__list">
+                                    <div class="music__hover1">
+                                        <i class="fa-solid fa-clock hover__icon"></i>
+                                        <h4 class="music__hover">4 mins 32 sec</h4>
+                                    </div>
+                                    <div class="music__hover2">
+                                        <i class="fa-solid fa-calendar hover__icon"></i>
+                                        <h4 class="music__hover">2013</h4>
+                                    </div>
+                                    <div class="music__hover3">
+                                        <i class="fa-solid fa-record-vinyl hover__icon"></i>
+                                        <h4 class="music__hover">Alternative</h4>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="music__info__list">
+                                <div class="music__info1">
+                                    <i class="fa-brands fa-itunes-note music__icon1"></i>
+                                    <h3 class="music__title">Do I Wanna Know?</h3>
+                                </div>
+                                <div class="music__info2">
+                                    <i class="fa-solid fa-folder music__icon2"></i>
+                                    <h4 class="music__album">AM</h4>
+                                </div>
+                                <div class="music__info3">
+                                    <i class="fa-solid fa-user music__icon3"></i>
+                                    <h4 class="music__artist">Arctic Monkeys</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="music">
+                            <figure class="music__image__wrapper">
+                                <img src="assets/500x500.jpg" alt="" class="music__image">
+                                <div class="music__hover__list">
+                                    <div class="music__hover1">
+                                        <i class="fa-solid fa-clock hover__icon"></i>
+                                        <h4 class="music__hover">5 mins 20 sec</h4>
+                                    </div>
+                                    <div class="music__hover2">
+                                        <i class="fa-solid fa-calendar hover__icon"></i>
+                                        <h4 class="music__hover">2001</h4>
+                                    </div>
+                                    <div class="music__hover3">
+                                        <i class="fa-solid fa-record-vinyl hover__icon"></i>
+                                        <h4 class="music__hover">Dance</h4>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="music__info__list">
+                                <div class="music__info1">
+                                    <i class="fa-brands fa-itunes-note music__icon1"></i>
+                                    <h3 class="music__title">One More Time</h3>
+                                </div>
+                                <div class="music__info2">
+                                    <i class="fa-solid fa-folder music__icon2"></i>
+                                    <h4 class="music__album">Discovery</h4>
+                                </div>
+                                <div class="music__info3">
+                                    <i class="fa-solid fa-user music__icon3"></i>
+                                    <h4 class="music__artist">Daft Punk</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="music">
+                            <figure class="music__image__wrapper">
+                                <img src="assets/blonde.jpg" alt="" class="music__image">
+                                <div class="music__hover__list">
+                                    <div class="music__hover1">
+                                        <i class="fa-solid fa-clock hover__icon"></i>
+                                        <h4 class="music__hover">3 mins 5 sec</h4>
+                                    </div>
+                                    <div class="music__hover2">
+                                        <i class="fa-solid fa-calendar hover__icon"></i>
+                                        <h4 class="music__hover">2016</h4>
+                                    </div>
+                                    <div class="music__hover3">
+                                        <i class="fa-solid fa-record-vinyl hover__icon"></i>
+                                        <h4 class="music__hover">Pop</h4>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="music__info__list">
+                                <div class="music__info1">
+                                    <i class="fa-brands fa-itunes-note music__icon1"></i>
+                                    <h3 class="music__title">Pink + White</h3>
+                                </div>
+                                <div class="music__info2">
+                                    <i class="fa-solid fa-folder music__icon2"></i>
+                                    <h4 class="music__album">Blonde</h4>
+                                </div>
+                                <div class="music__info3">
+                                    <i class="fa-solid fa-user music__icon3"></i>
+                                    <h4 class="music__artist">Frank Ocean</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="music">
+                            <figure class="music__image__wrapper">
+                                <img src="assets/a3014736963_16.jpg" alt="" class="music__image">
+                                <div class="music__hover__list">
+                                    <div class="music__hover1">
+                                        <i class="fa-solid fa-clock hover__icon"></i>
+                                        <h4 class="music__hover">4 mins 9 sec</h4>
+                                    </div>
+                                    <div class="music__hover2">
+                                        <i class="fa-solid fa-calendar hover__icon"></i>
+                                        <h4 class="music__hover">2025</h4>
+                                    </div>
+                                    <div class="music__hover3">
+                                        <i class="fa-solid fa-record-vinyl hover__icon"></i>
+                                        <h4 class="music__hover">Alternative</h4>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="music__info__list">
+                                <div class="music__info1">
+                                    <i class="fa-brands fa-itunes-note music__icon1"></i>
+                                    <h3 class="music__title">Right?</h3>
+                                </div>
+                                <div class="music__info2">
+                                    <i class="fa-solid fa-folder music__icon2"></i>
+                                    <h4 class="music__album">Burnout Days</h4>
+                                </div>
+                                <div class="music__info3">
+                                    <i class="fa-solid fa-user music__icon3"></i>
+                                    <h4 class="music__artist">Flipturn</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
